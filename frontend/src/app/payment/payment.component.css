@@ -1,0 +1,109 @@
+/* Main container */
+.payment-container {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+  }
+  
+  /* Centered card */
+  .payment-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    max-width: 480px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+  }
+  
+  .payment-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Section title */
+  .payment-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Label styling */
+  .stripe-label {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  /* Stripe element wrapper */
+  .stripe-field-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Stripe input field */
+  .stripe-element {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    font-size: 15px;
+    min-height: 48px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Stripe focused */
+  .stripe-element.StripeElement--focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 6px rgba(13, 110, 253, 0.25);
+  }
+  
+  /* Stripe error */
+  .stripe-element.StripeElement--invalid {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+  }
+  
+  /* Submit button */
+  .btn-submit {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.2s ease;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0b5ed7;
+  }
+  
+  /* Stripe error message */
+  .stripe-error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .payment-card {
+      padding: 20px;
+    }
+  
+    .stripe-element {
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+  
+    .btn-submit {
+      padding: 10px;
+    }
+  }
+  

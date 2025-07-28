@@ -1,0 +1,108 @@
+.container {
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: #f9fafc;
+  }
+  
+  /* Section Title */
+  h1.display-5 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    color: #212529;
+    text-align: center;
+  }
+  
+  /* Order Card */
+  .order-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 40px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #0d6efd;
+  }
+  
+  .order-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Order Info Header */
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #f1f3f5, #e9ecef);
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+  }
+  
+  /* Item Table */
+  .table-sm {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .table-sm thead {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .table-sm th,
+  .table-sm td {
+    padding: 12px 16px;
+    vertical-align: middle;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .table-sm td:first-child,
+  .table-sm th:first-child {
+    text-align: left;
+  }
+  
+  /* Product Image */
+  .product-img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Product Link */
+  .product-link {
+    color: #0d6efd;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .product-link:hover {
+    color: #084298;
+    text-decoration: underline;
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .order-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  
+    .table-sm th,
+    .table-sm td {
+      padding: 10px 12px;
+    }
+  }
+  

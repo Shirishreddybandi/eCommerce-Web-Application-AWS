@@ -1,0 +1,121 @@
+/* Page container styling */
+.container {
+    margin-top: 60px;
+    padding: 0 15px;
+}
+
+/* Product header */
+#productHeader {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+#productHeader::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Product display layout */
+.row {
+    gap: 20px;
+}
+
+/* Product image */
+#productImg {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#productImg:hover {
+    transform: scale(1.02);
+}
+
+/* Product info section */
+.col-md-6 h2 {
+    font-size: 2rem;
+    color: #34495e;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.col-md-6 p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Price styling */
+.col-md-6 p:nth-of-type(2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #27ae60;
+}
+
+/* Quantity input */
+label[for="quantity"] {
+    font-weight: 500;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+#quantity {
+    width: 100px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 8px;
+    transition: border 0.2s;
+}
+
+#quantity:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    #productHeader {
+        font-size: 2rem;
+    }
+
+    .col-md-6 {
+        text-align: center;
+    }
+
+    #productImg {
+        margin-bottom: 20px;
+    }
+}

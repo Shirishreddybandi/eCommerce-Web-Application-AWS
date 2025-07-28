@@ -1,0 +1,20 @@
+<div class="container payment-container text-center">
+  <h1 class="display-5 mb-4">Secure Payment</h1>
+
+  <div class="row justify-content-center">
+    <div class="col-md-5 col-lg-4 col-sm-8">
+      <div class="card payment-card shadow-sm">
+        <div class="card-body">
+          <form (ngSubmit)="onSubmit()">
+            <div class="form-group mb-4 text-start">
+              <label for="card-element" class="form-label fw-semibold">Card Information</label>
+              <div id="card-element" class="form-control" style="height: 42px;"></div>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100 fw-semibold">Submit Payment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
